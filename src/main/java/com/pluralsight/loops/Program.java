@@ -27,6 +27,7 @@ public class Program {
 
         System.out.println("Please search via first or last name: ");
         String userSearch = scanner.nextLine();
+
         List<Person> matchingPersons = new ArrayList<>();
         for (Person american : americans) {
             if (american.getFirstName().toLowerCase().contains(userSearch.toLowerCase()) ||
@@ -62,7 +63,7 @@ public class Program {
         }
 
         System.out.println("Oldest person in the original list: " + oldest.getFirstName() + " " + oldest.getLastName() + ", age " + oldest.getAge());
-        System.out.println("Youngest person in the original list: " +  youngest.getFirstName() + " " + youngest.getLastName() + ", age " + youngest.getAge());
+        System.out.println("Youngest person in the original list: " + youngest.getFirstName() + " " + youngest.getLastName() + ", age " + youngest.getAge());
 
     }
 
